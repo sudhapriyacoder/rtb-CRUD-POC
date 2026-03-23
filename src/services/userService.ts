@@ -1,7 +1,7 @@
 import { User } from "../types/user";
 
 let mockUsers: User[] = [
-  { id: "1", name: "Alice Johnson", email: "alice@example.com", role: "admin" },
+  { id: "1", name: "Alice", email: "alice@example.com", role: "admin" },
   { id: "2", name: "Bob Smith", email: "bob@example.com", role: "editor" },
   { id: "3", name: "Carol Davis", email: "carol@example.com", role: "viewer" },
 ];
