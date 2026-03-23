@@ -1,46 +1,69 @@
-# Getting Started with Create React App
+# React CRUD App (TypeScript)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A sample React 18 + TypeScript CRUD application with a mock API service. It demonstrates a clean architecture, reusable components, and a scalable folder layout.
 
-## Available Scripts
+## Project structure
 
-In the project directory, you can run:
+```
+src/
+  app/
+  components/
+    UserList.tsx
+    UserForm.tsx
+    Input.tsx
+    Button.tsx
+  hooks/
+    useUsers.ts
+  services/
+    userService.ts
+  types/
+    user.ts
+  utils/
+  index.tsx
+  App.tsx
+```
 
-### `npm start`
+## Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Clone repository
+   ```bash
+   git clone <repo-url>
+   cd my-app
+   ```
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+3. Start app
+   ```bash
+   npm start
+   ```
+4. Open `http://localhost:3000`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+- CRUD user management (create/edit/delete)
+- `useUsers` custom hook
+- mock API service (`userService`)
+- form validation with errors
+- mobile-first responsive UI
+- accessible components (ARIA, keyboard friendly)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Available scripts
 
-### `npm run build`
+- `npm start` – start dev server
+- `npm run build` – production build
+- `npm test` – run tests
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Add a user via form
+- Edit by clicking row Edit button
+- Delete with Delete button
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Notes
 
-### `npm run eject`
+- Replace mock service with real API as needed
+- Keep `useUsers` as single source of truth
+- Add tests and e2e coverage for production readiness
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
